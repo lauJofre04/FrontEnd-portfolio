@@ -5,7 +5,7 @@
 export const environment = {
 
     production: false,
-    URL: 'inland-gizela-laujofre04.koyeb.app/'
+
   };
   
   /*

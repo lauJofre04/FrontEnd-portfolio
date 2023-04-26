@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    URL: 'inland-gizela-laujofre04.koyeb.app/'
+    URL: 'https://backend-portfolio-j8y0.onrender.com'
   };
