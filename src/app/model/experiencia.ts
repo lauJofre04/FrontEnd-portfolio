@@ -1,10 +1,24 @@
 export class Experiencia {
     id?: number;
-    nombreE: string;
-    descripcionE: string;
-    constructor(nombreE: string,descripcionE: string){
-        this.nombreE=nombreE;
-        this.descripcionE=descripcionE;
+    puesto : string;
+    inicio : string;
+    fin : string;
+    descripcion : string;
+    imagen : string;
+    url : string;
+    empresa : string;
+    esTrabajoActual : boolean;
+    personaid : number;
+
+    constructor(puesto:string, inicio: string, fin: string, descripcion:string, imagen:string, url:string, empresa:string, esTrabajoActual:boolean, personaid : number) {
+        this.puesto = puesto;
+        this.inicio = inicio;
+        this.fin = fin;
+        this.descripcion = descripcion;
+        this.imagen = imagen;
+        this.url = url;
+        this.empresa = empresa;
+        this.esTrabajoActual = esTrabajoActual;
+        this.personaid = personaid;
     }
-    
 }

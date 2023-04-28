@@ -1,23 +1,33 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { EditEducacionComponent } from './components/educacion/edit-educacion.component';
-import { NeweducacionComponent } from './components/educacion/neweducacion.component';
-import { EditExperienciaComponent } from './components/experiencia/edit-experiencia.component';
-import { NewExperienciaComponent } from './components/experiencia/new-experiencia.component';
+import { EducacionComponent } from './components/educacion/educacion.component';
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
+import { HysComponent } from './components/hys/hys/hys.component';
 import { HomeComponent } from './components/home/home.component';
-import { EditSkillComponent } from './components/hys/edit-skill.component';
-import { NewSkillComponent } from './components/hys/new-skill.component';
 import { LoginComponent } from './components/login/login.component';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { ModalEditarEduComponent } from './modales/modal-editar-edu/modal-editar-edu.component';
+import { ModalEditarExpComponent } from './modales/modal-editar-exp/modal-editar-exp.component';
+import { ModalEditarProyComponent } from './modales/modal-editar-proy/modal-editar-proy.component';
+import { ModalEditarSkillComponent } from './modales/modal-editar-skill/modal-editar-skill.component';
+import { ModalEditarSobreMiComponent } from './modales/modal-editar-sobre-mi/modal-editar-sobre-mi.component';
+import { ModalEducacionComponent } from './modales/modal-educacion/modal-educacion.component';
 
+
+//las rutas van ordenandas, al final va el error, primero el index 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'nuevaexp', component: NewExperienciaComponent},
-  { path: 'editexp/:id', component: EditExperienciaComponent},
-  { path: 'nuevaedu', component: NeweducacionComponent},
-  { path: 'editedu/:id', component: EditEducacionComponent},
-  { path: 'newskill', component: NewSkillComponent},
-  { path: 'editskill/:id', component: EditSkillComponent}
+  {path:'', component: HomeComponent},
+  {path:'login', component: LoginComponent },
+  {path: 'editAcercaDe/:id', component: ModalEditarSobreMiComponent},
+  {path: 'editExperiencia/:id', component: ModalEditarExpComponent},
+  {path: 'editEducacion/:id', component: ModalEditarEduComponent},
+  {path: 'editHys/:id', component: ModalEditarSkillComponent},
+  {path: 'editProyecto/:id', component: ModalEditarProyComponent},
+  {path:'experiencia', component: ExperienciaComponent},
+  {path:'educacion', component: EducacionComponent},
+  {path:'habilidades', component: HysComponent},
+  {path:'proyectos', component: ProyectosComponent},
+  
 ];
 
 @NgModule({

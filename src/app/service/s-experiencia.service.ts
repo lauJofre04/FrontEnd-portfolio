@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment.prod';
   providedIn: 'root'
 })
 export class SExperienciaService {
-  expURL=environment.URL+'experiencia/';
+  expURL=environment.URL + 'experiencia/';
 
   constructor(private httpClient:HttpClient) { }
 
@@ -24,6 +24,9 @@ export class SExperienciaService {
   public update(id: number, experiencia:Experiencia):Observable<any>{
     return this.httpClient.put<any>(this.expURL+`update/${id}`,experiencia);
   }
+  public edit(experiencia: Experiencia):Observable<any>{
+    return this.httpClient.put<any>(this.expURL + 'update', experiencia);
+    }
   public delete(id: number):Observable<any>{
     return this.httpClient.delete<any>(this.expURL+`delete/${id}`);
   }

@@ -9,36 +9,32 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./educacion.component.css']
 })
 export class EducacionComponent {
-  educacion:Educacion[]=[];
-  constructor(private educacionS: EducacionService, private tokenService: TokenService){
-  }
-  isLogged= false;
-  ngOnInit():void{
-    this.cargarEducacion();
+  isLogged:boolean=false;
+  estudios: Educacion[]=[]; //se llama al modelo que es un array
+  
+  constructor(private tokenService: TokenService, private sEstudio:EducacionService) { }
+
+  ngOnInit(): void {
+    this.cargarEstudio();
     if(this.tokenService.getToken()){
-      this.isLogged=true;
+      this.isLogged = true;
     }else{
-      this.isLogged=false;
+      this.isLogged = false;
     }
   }
 
-  cargarEducacion(): void{
-    this.educacionS.lista().subscribe(
-      data=>{
-        this.educacion=data;
-      }
-    )
+  cargarEstudio():void{
+    this.sEstudio.lista().subscribe(data => {this.estudios=data});
   }
 
-  delete(id?:number){
-    if(id!=undefined){
-      this.educacionS.delete(id).subscribe(
-        data=>{
-          this.cargarEducacion();
-        },err =>{
-          alert("No se pudo eliminar");
-        }
-      )
-    }
-  }
+  delete(id:number){
+    if(id != undefined){
+      this.sEstudio.delete(id).subscribe(
+        data =>{
+          alert("Estudio eliminado correctamente")
+          this.cargarEstudio();
+        }, err =>{
+          alert("no se pudo eliminar la educacion")
+        })
+    }}
 }
