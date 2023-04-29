@@ -11,7 +11,7 @@ import { SExperienciaService } from 'src/app/service/s-experiencia.service';
 })
 export class ModalEditarExpComponent implements OnInit{
   form:FormGroup;
-  experiencia :Experiencia;
+  experiencia !:Experiencia;
   constructor(private formBuilder: FormBuilder,
               private sExperiencia: SExperienciaService,
               private activatedRoute:ActivatedRoute,

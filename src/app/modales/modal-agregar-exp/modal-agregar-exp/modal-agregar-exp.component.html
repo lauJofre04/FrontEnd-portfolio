@@ -15,9 +15,9 @@
               </div>
               <div class="mb-3">
                   <label for="descripcion" class="form-label">Agregar Información de Cargo</label>
-                  <textarea class="form-control"   rows="3" formControlName="descripcion" [ngClass]="{'is-invalid': Descripcion.errors && Descripcion.touched, 'is-valid': !Descripcion.errors && Descripcion.touched}"></textarea>
-                  <div *ngIf="Descripcion.errors && Descripcion.touched">    
-                    <p *ngIf="Descripcion.hasError('required')" class="text-danger">
+                  <textarea class="form-control"   rows="3" formControlName="descripcion" [ngClass]?="{'is-invalid': Descripcion.errors && Descripcion.touched, 'is-valid': !Descripcion.errors && Descripcion.touched}"></textarea>
+                  <div *ngIf?="Descripcion.errors && Descripcion.touched">    
+                    <p *ngIf?="Descripcion.hasError('required')" class="text-danger">
                       La descripcion es requerida.
                     </p>
                   </div>
@@ -27,7 +27,8 @@
                 <button type="submit" class="btn btnLogin btn-dark">Agregar</button>          
               </div>
 
-          </form>
+      </div>
+      </form>
             
       </div>
     </div>

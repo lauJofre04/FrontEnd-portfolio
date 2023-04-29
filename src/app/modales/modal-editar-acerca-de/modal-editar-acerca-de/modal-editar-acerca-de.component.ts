@@ -11,7 +11,7 @@ import { PersonaService } from 'src/app/service/persona.service';
 })
 export class ModalEditarAcercaDeComponent implements OnInit{
   form:FormGroup;
-  perso:persona;
+  perso?:persona;
   
   constructor(private formBuilder: FormBuilder,
               private sPersona:PersonaService,

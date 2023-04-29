@@ -34,11 +34,11 @@ export class ModalProyectosAddComponent implements OnInit {
 
 
   get ProyectoValid(){
-    return this.Proyecto.touched && !this.Proyecto.valid;
+    return this.Proyecto?.touched && !this.Proyecto?.valid;
   }
 
   get DescripcionValid() {
-    return this.Descripcion.touched && !this.Descripcion.valid;
+    return this.Descripcion?.touched && !this.Descripcion?.valid;
   }
 
   

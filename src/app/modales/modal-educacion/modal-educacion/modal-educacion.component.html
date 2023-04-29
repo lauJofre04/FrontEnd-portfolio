@@ -23,9 +23,9 @@
                 </div>
                 <div class="mb-3">
                   <label for="educacionEstudio" class="form-label">Agregar Estudio</label>
-                  <input type="text" class="form-control"   formControlName="estudio" placeholder="Nombre nuevo"  [ngClass]="{'is-invalid': Estudio.errors && Estudio.touched, 'is-valid': !Estudio.errors && Estudio.touched}">
-                  <div *ngIf="Estudio.errors && Estudio.touched">    
-                    <p *ngIf="Estudio.hasError('required')" class="text-danger">
+                  <input type="text" class="form-control"   formControlName="estudio" placeholder="Nombre nuevo"  [ngClass]="{'is-invalid': Estudio?.errors && Estudio?.touched, 'is-valid': !Estudio?.errors && Estudio?.touched}">
+                  <div *ngIf="Estudio?.errors && Estudio?.touched">    
+                    <p *ngIf="Estudio?.hasError('required')" class="text-danger">
                       El estudio es requerido.
                     </p>
                   </div>
@@ -40,9 +40,9 @@
                 </div>
                 <div class="mb-3">
                     <label for="educacionInfo" class="form-label">Agregar Información de Estudio Realizado</label>
-                    <textarea class="form-control"  rows="3" formControlName="descripcion"  [ngClass]="{'is-invalid': Descripcion.errors && Descripcion.touched, 'is-valid': !Descripcion.errors && Descripcion.touched}"></textarea >
-                    <div *ngIf="Descripcion.errors && Descripcion.touched">    
-                      <p *ngIf="Descripcion.hasError('required')" class="text-danger">
+                    <textarea class="form-control"  rows="3" formControlName="descripcion"  [ngClass]="{'is-invalid': Descripcion?.errors && Descripcion?.touched, 'is-valid': !Descripcion?.errors && Descripcion?.touched}"></textarea >
+                    <div *ngIf="Descripcion?.errors && Descripcion?.touched">    
+                      <p *ngIf="Descripcion?.hasError('required')" class="text-danger">
                         La descripcion es requerida.
                       </p>
                     </div>

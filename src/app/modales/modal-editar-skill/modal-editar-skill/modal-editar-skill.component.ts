@@ -12,7 +12,7 @@ import { SkillService } from 'src/app/service/skill.service';
 export class ModalEditarSkillComponent implements OnInit{
 
   form: FormGroup;
-  habi:Skill=null;
+  habi?:Skill;
   constructor(private formBuilder: FormBuilder, 
     private sHabilidad:SkillService, 
     private activatedRoute:ActivatedRoute,
