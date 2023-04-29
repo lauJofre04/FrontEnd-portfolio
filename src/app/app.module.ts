@@ -3,6 +3,8 @@ import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
@@ -11,10 +13,10 @@ import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
-import { HysComponent } from './components/hys/hys/hys.component';
+import { HysComponent } from './components/hys/hys.component';
 import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HttpClientModule } from '@angular/common/http';
+
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { interceptorProvider } from './service/interceptor-service';
@@ -29,6 +31,7 @@ import { ModalEducacionComponent } from './modales/modal-educacion/modal-educaci
 import { ModalLoginComponent } from './modales/modal-login/modal-login/modal-login.component';
 import { ModalLogoutComponent } from './modales/modal-logout/modal-logout/modal-logout.component';
 import { ModalProyectosAddComponent } from './modales/modal-proyectos-add/modal-proyectos-add/modal-proyectos-add.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -63,6 +66,7 @@ import { ModalProyectosAddComponent } from './modales/modal-proyectos-add/modal-
     AppRoutingModule,
     HttpClientModule,
     NgCircleProgressModule.forRoot({}),
+    CommonModule
   ],
   exports:[RouterModule],
   providers: [

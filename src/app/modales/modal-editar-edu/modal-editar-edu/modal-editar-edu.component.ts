@@ -10,7 +10,7 @@ import { EducacionService } from 'src/app/service/educacion.service';
   styleUrls: ['./modal-editar-edu.component.css']
 })
 export class ModalEditarEduComponent implements OnInit {form:FormGroup;
-  estu:Educacion;
+  estu?:Educacion;
   constructor(private formBuilder: FormBuilder, 
               private sEstudio:EducacionService, 
               private activatedRoute:ActivatedRoute,

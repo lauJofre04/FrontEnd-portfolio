@@ -1,6 +1,5 @@
 <div class="row">
     <div class="container">
-        <nav class="navbar navbar-dark bg-dark">
            <div class="logo">
                 <img src="../../../assets/APLogo.png" id="logoAP">
             </div>
@@ -13,7 +12,7 @@
                     <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Ingresar</button>
                     <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesión</button>
             </div> 
-        </nav>
         
     </div>
 </div>
+<app-modal-login></app-modal-login>

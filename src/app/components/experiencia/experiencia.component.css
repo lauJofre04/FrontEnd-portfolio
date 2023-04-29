@@ -2,6 +2,15 @@
     padding: 20px;
 }
 
-h1, h3{
-    display: inline;
+#experiencia{
+    color: #fefefe;
+    font-size: 14px;
+    text-align: center;
+}
+
+.seccion{
+    background-color: 0;
+}
+h3{
+    color: black;
 }
