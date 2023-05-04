@@ -4,13 +4,13 @@
                 <img src="../../../assets/APLogo.png" id="logoAP">
             </div>
             <div class="redes">
-                    <a ><img src="../../../assets/linkedin.png" id="linkedin"></a>
-                    <a><img src="../../../assets/facebook.png" id="facebook"></a>
-                    <a><img src="../../../assets/github.png" id="github"></a>
-                    <a><img src="../../../assets/instagram.png" id="instagram"></a>
-                    <a><img src="../../../assets/twitter.png" id="twitter"></a>
-                    <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Ingresar</button>
-                    <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesión</button>
+                    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><img  src="../../../assets/linkedin.png" id="linkedin"></a>
+                    <a href="https://www.facebook.com/lautaro.jofre.923"><img src="../../../assets/facebook.png" id="facebook"></a>
+                    <a href="https://github.com/lauJofre04"><img src="../../../assets/github.png" id="github"></a>
+                    <a href="https://www.instagram.com/lautaro.jofre9/"><img src="../../../assets/instagram.png" id="instagram"></a>
+                    <a href="https://twitter.com/Lauti_jofre9"><img src="../../../assets/twitter.png" id="twitter"></a>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal" (click)="login()" *ngIf="!isLogged">Ingresar</button>
+                    <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#loginModal" (click)="onLogOut()" *ngIf="isLogged">Cerrar Sesión</button>
             </div> 
         
     </div>
