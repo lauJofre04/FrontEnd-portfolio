@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment.prod';
   providedIn: 'root'
 })
 export class SExperienciaService {
-  expURL=environment.URL + 'experiencia/';
+  expURL='https://backend-portfolio-j8y0.onrender.com/experiencia/';
 
   constructor(private httpClient:HttpClient) { }
 

@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL=environment.URL+'persona/';
+  URL='https://backend-portfolio-j8y0.onrender.com/persona/';
   constructor(private httpClient: HttpClient) { }
   
   public lista(): Observable<persona[]>{
