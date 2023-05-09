@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment.prod';
 })
 export class EducacionService {
 
-  url='https://backend-portfolio-j8y0.onrender.com/educacion/'
+  url=environment.URL+'educacion/'
   constructor(private httpClient:HttpClient) { }
   public lista(): Observable<Educacion[]>{
     return this.httpClient.get<Educacion[]>(this.url + 'lista');

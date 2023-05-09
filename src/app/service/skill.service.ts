@@ -9,7 +9,7 @@ import { Skill } from '../model/skill';
   providedIn: 'root'
 })
 export class SkillService {
-  URL = 'https://backend-portfolio-j8y0.onrender.com/skill/';
+  URL = environment.URL+'skill/';
   
   constructor(private httpClient: HttpClient) { }
 

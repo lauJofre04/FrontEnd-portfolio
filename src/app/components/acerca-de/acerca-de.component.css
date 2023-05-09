@@ -5,9 +5,9 @@
 #nombre{
     font-weight: bold;
     margin-top: 30%;
-    
+    color: black;
 }
-@media (min-width:576 px) {
+@media (min-width:576px) {
     #fotoperfil{
         position: absolute;
         width: 15%;

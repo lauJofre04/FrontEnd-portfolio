@@ -8,7 +8,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class ProyectoService {
-  url:string="https://backend-portfolio-j8y0.onrender.com/proyecto/";
+  url:string=environment.URL+"proyecto/";
   constructor(private httpClient:HttpClient) { }
 
   public lista(): Observable<Proyecto[]>{

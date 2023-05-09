@@ -24,7 +24,7 @@ const appRoutes: Routes = [
   {path: 'editProyecto/:id', component: ModalEditarProyComponent},
   {path:'experiencia', component: ExperienciaComponent},
   {path:'educacion', component: EducacionComponent},
-  {path:'habilidades', component: HysComponent},
+  {path:'hys', component: HysComponent},
   {path:'proyectos', component: ProyectosComponent},
   
 ];
